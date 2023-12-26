@@ -1,17 +1,23 @@
-import { Inter } from 'next/font/google'
-import './globals.css'
+import { JetBrains_Mono } from "next/font/google";
+import "./globals.css";
+import Navbar from "@/components/navbar";
+import { Toaster } from "@/components/ui/toaster";
 
-const inter = Inter({ subsets: ['latin'] })
+const jetbrains = JetBrains_Mono({ subsets: ["latin"] });
 
 export const metadata = {
-  title: 'Next-Authentication',
-  description: 'Authentication Module',
-}
+	title: "Full Custom Auth",
+	description: "Authentication Module",
+};
 
 export default function RootLayout({ children }) {
-  return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
-    </html>
-  )
+	return (
+		<html lang="en">
+			<body className={jetbrains.className}>
+				<Toaster />
+				<Navbar />
+				<main>{children}</main>
+			</body>
+		</html>
+	);
 }
