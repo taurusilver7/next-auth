@@ -15,6 +15,8 @@ yarn dev
 
 Refactor the starter template to suit the authentication module.
 
+Get UI snippets from [tailblocks](https://tailblocks.cc) to build the navbar, 
+
 
 
 ## Deploy on Vercel
