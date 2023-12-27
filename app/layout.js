@@ -1,7 +1,7 @@
 import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/navbar";
 import { Toaster } from "@/components/ui/toaster";
+import { cn } from "@/lib/utils";
 
 const jetbrains = JetBrains_Mono({ subsets: ["latin"] });
 
@@ -13,9 +13,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
-			<body className={jetbrains.className}>
+			<body className={cn(jetbrains.className, "h-full bg-slate-200")}>
 				<Toaster />
-				<Navbar />
 				<main>{children}</main>
 			</body>
 		</html>
