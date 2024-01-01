@@ -20,7 +20,10 @@ export default function Home() {
 				>
 					🔏 Authentication
 				</h1>
-				<p className="text-slate-100 text-lg">A Next Custom Auth System</p>
+				<p className="text-slate-100 text-lg">
+					Fully Custom Next.JS Authentication System, built with Next-Auth,
+					Typescript, Prisma & Postgres.
+				</p>
 
 				<div>
 					<LoginButton>

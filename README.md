@@ -34,9 +34,7 @@ Add 100% height to all pages in the global stylesheet.
 
 Create a marketing home page, redirecting to the login in auth route. Create a layout for the auth route (login, register, forgot-password)
 
-Create auth custom components, button & form, card-wrapper. Add shadcn-ui card component to design the loginForm component.
-
-
+Create auth custom components, button & form, card-wrapper, header, back-button, social. Add shadcn-ui card component to design the loginForm component.
 
 ## Learn More
 
