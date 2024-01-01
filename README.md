@@ -28,6 +28,8 @@ npx shadcn-ui@latest add <component_name>
 
 Refactor the starter template & modify the layout & home page.
 
+Add 100% height to all pages in the global stylesheet.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
