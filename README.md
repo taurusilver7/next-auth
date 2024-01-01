@@ -44,7 +44,7 @@ The startTransition state & the useTransition hook helps the server action in pe
 
 The server action code-sequence is almost similar to the api route handling, whatever one may choose.
 
-
+Validate the credentials on the server side, since validation on client side can be bypassed.
 
 ## Learn More
 
