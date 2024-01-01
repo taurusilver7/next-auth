@@ -2,6 +2,8 @@
 
 > A Custom Authentication Service, built by Next-Auth, Typescript, TailwindCSS, Prisma & Neon Postgresql Database.
 
+![Next-Auth](https://i.ytimg.com/vi/w2h54xz6Ndw/maxresdefault.jpg)
+
 ## Availabel Scripts
 
 First, run the development server:
