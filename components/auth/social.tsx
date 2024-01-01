@@ -10,7 +10,7 @@ const Social = () => {
 		<div className="flex items-center w-full gap-x-2">
 			<Button
 				size="lg"
-				className="w-full"
+				className="w-full bg-slate-100"
 				variant="outline"
 				onClick={() => {}}
 			>
@@ -18,7 +18,7 @@ const Social = () => {
 			</Button>
 			<Button
 				size="lg"
-				className="w-full"
+				className="w-full bg-slate-100"
 				variant="outline"
 				onClick={() => {}}
 			>
