@@ -34,7 +34,17 @@ Add 100% height to all pages in the global stylesheet.
 
 Create a marketing home page, redirecting to the login in auth route. Create a layout for the auth route (login, register, forgot-password)
 
-Create auth custom components, button & form, card-wrapper, header, back-button, social. Add shadcn-ui card component to design the loginForm component.
+Create auth custom components, button, form, card-wrapper, header, back-button, social. Add shadcn-ui card component to design the loginForm wrapper component.
+
+Create the login-form component with Form & corresponding UI components. Create form-success & form-error message components to display the form status on UI.
+
+The onSubmit form function takes the form input values and feeds the login server action to pass them from client to server.
+
+The startTransition state & the useTransition hook helps the server action in pending states & follow up sequences (.then() method)
+
+The server action code-sequence is almost similar to the api route handling, whatever one may choose.
+
+
 
 ## Learn More
 
