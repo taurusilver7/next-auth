@@ -4,6 +4,25 @@
 
 ![Next-Auth](https://i.ytimg.com/vi/w2h54xz6Ndw/maxresdefault.jpg)
 
+## Key Features
+
+-  🔐 Next.js 14 with Next-Auth v5 & server actions
+-  🔑 Credentials Provider& OAuth Provider (Social login with Google & GitHub)
+-  🔒 Email verification & Forgot password functionality
+-  📱 Two factor verification (2FA)
+-  👥 User roles (Admin & User)
+-  🔓 Login component (Opens in redirect or modal) & Register component.
+-  ✅ Forgot password, email-verification component
+-  🔍 Exploring next.js middleware, next-auth sessions & next-auth callbacks.
+-  👤 useCurrentUser & useRole hooks.
+-  🧑 currentUser & currentRole utilities.
+-  🚧 Render content for admins using RoleGate component
+-  🛡️ Protect API Routes & Server Actions for admins only.
+-  📧 Change email with new verification in Settings
+-  🔑 Change password with old password confirmation in Settings
+-  🔔 Enable/disable two-factor auth in Settings.
+-  🔄 Change user role in Settings page (for development only)
+
 ## Availabel Scripts
 
 First, run the development server:
