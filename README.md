@@ -53,6 +53,8 @@ Add 100% height to all pages in the global stylesheet.
 
 Create a marketing home page, redirecting to the login in auth route. Create a layout for the auth route (login, register, forgot-password)
 
+-  Login
+
 Create auth custom components, button, form, card-wrapper, header, back-button, social. Add shadcn-ui card component to design the loginForm wrapper component.
 
 Create the login-form component with Form & corresponding UI components. Create form-success & form-error message components to display the form status on UI.
@@ -63,7 +65,17 @@ The startTransition state & the useTransition hook helps the server action in pe
 
 The server action code-sequence is almost similar to the api route handling, whatever one may choose.
 
-Validate the credentials on the server side, since validation on client side can be bypassed.
+Validate the credentials on the server side, since validation on client side can be bypassed manually with various means.
+
+-  Register
+
+Create register schema to take & validate the register form inputs. Create register Form component with different propped-child components suitable for register.
+
+Create a register server action to validate the register credentials on the server side.
+
+- Database
+
+
 
 ## Learn More
 
