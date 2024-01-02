@@ -87,6 +87,8 @@ npx prisma init
 
 Create a prisma util function before initializing prisma instance.
 
+Setup [Neon]() serverless postgresql database.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
