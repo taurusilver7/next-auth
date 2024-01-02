@@ -73,9 +73,19 @@ Create register schema to take & validate the register form inputs. Create regis
 
 Create a register server action to validate the register credentials on the server side.
 
-- Database
+-  Database
 
+Setup [prisma](https://www.prisma.io/docs/getting-started/setup-prisma/add-to-existing-project/relational-databases-typescript-postgresql) orm in the system.
 
+```bash
+npm i -D prisma
+# and
+npm install @prisma/client
+# and
+npx prisma init
+```
+
+Create a prisma util function before initializing prisma instance.
 
 ## Learn More
 
