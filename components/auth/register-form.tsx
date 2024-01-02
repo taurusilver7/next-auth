@@ -29,11 +29,13 @@ export const RegisterForm = () => {
 		defaultValues: {
 			email: "",
 			password: "",
+			name: "",
 		},
 	});
 	const onSubmit = (values: z.infer<typeof RegisterSchema>) => {
 		setError("");
 		setSuccess("");
+
 		startTransition(() => {
 			register(values).then((data) => {
 				setError(data.error);
@@ -111,7 +113,7 @@ export const RegisterForm = () => {
 					<FormSuccess message={success} />
 
 					<Button disabled={isPending} type="submit" className="w-full">
-						Register
+						Create an Account
 					</Button>
 				</form>
 			</Form>
