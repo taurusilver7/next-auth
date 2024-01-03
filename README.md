@@ -113,6 +113,20 @@ Create a configuration file for next-auth, along with an auth api route at `/app
 
 The Auth requires a secret to encrypt cookies, JWT & other sensitive information. Generate a good secret value [here](https://authjs.dev/reference/core/errors#missingsecret) for production.
 
+Create an auth middleware. It is next.js specific only. For advanced cases, use `auth()` in the middleware. All the routes added to the `matcher` in config only invoke the auth middleware.
+
+Replace the regex pattern in the matcher with [one](https://clerk.com/docs/quickstarts/nextjs) in Clerk documentation.
+
+The public routes consist of the landing/marketing & documentation pages. These can be accessed by non-authorized users too. The rest are all protected routes.
+
+-  Edge Compatibility
+
+Since Prisma is incompatible with Edge runtime/infrastructure, a lot of auth callbacks and events doesn't work in `auth.ts` files system. Separate the auth configuration.
+
+Create `auth.config.ts` to hold all the next-providers & call the middleware
+
+Modify `auth.ts` to add the prisma adapter (along with JWT sessions) and add the auth config to the list.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
