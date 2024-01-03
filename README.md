@@ -101,6 +101,10 @@ The generate command let the `lib/db.ts` PrismaClient access the User model in t
 
 Get the appropriate User model sample from [next-auth](https://authjs.dev/reference/adapter/prisma) documentation
 
+Though it was not advised to add password to the User model, to implement the credentials Provider for authentication, add an optional String field for password.
+
+Encrypt the password before storing in the databse during the register server action with `bcrypt`
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
