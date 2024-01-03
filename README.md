@@ -87,7 +87,19 @@ npx prisma init
 
 Create a prisma util function before initializing prisma instance.
 
-Setup [Neon]() serverless postgresql database.
+Setup [Neon](https://console.neon.tech) serverless postgresql database. Create a project & get the direct & database_url.
+
+Create a datasource & client generator in the schema before creating a User model.
+
+```bash
+npx prisma generate
+# and
+npx prisma db push
+```
+
+The generate command let the `lib/db.ts` PrismaClient access the User model in the Schema & the postgres database. Deploy to the serverless module to sync the schema with the database.
+
+Get the appropriate User model sample from [next-auth](https://authjs.dev/reference/adapter/prisma) documentation
 
 ## Learn More
 
