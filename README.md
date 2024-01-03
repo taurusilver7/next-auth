@@ -105,6 +105,14 @@ Though it was not advised to add password to the User model, to implement the cr
 
 Encrypt the password before storing in the databse during the register server action with `bcrypt`
 
+Restrict a logged in user before email verification. The field `emaiiVerified` in User model restricts the next-auth to never allow a user to completely login.
+
+Follow the [guide](https://authjs.dev/guides/upgrade-to-v5) to update the next-auth to V.5
+
+Create a configuration file for next-auth, along with an auth api route at `/app/api/auth/[...nextauth]/route.ts`.
+
+The Auth requires a secret to encrypt cookies, JWT & other sensitive information. Generate a good secret value [here](https://authjs.dev/reference/core/errors#missingsecret) for production.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
