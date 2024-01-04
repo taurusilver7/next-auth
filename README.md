@@ -95,6 +95,10 @@ Create a datasource & client generator in the schema before creating a User mode
 npx prisma generate
 # and
 npx prisma db push
+# and
+npx prisma studio (to launch a local database)
+# and
+npx prisma migrate reset (to erase previous records)
 ```
 
 The generate command let the `lib/db.ts` PrismaClient access the User model in the Schema & the postgres database. Deploy to the serverless module to sync the schema with the database.
@@ -126,6 +130,12 @@ Since Prisma is incompatible with Edge runtime/infrastructure, a lot of auth cal
 Create `auth.config.ts` to hold all the next-providers & call the middleware
 
 Modify `auth.ts` to add the prisma adapter (along with JWT sessions) and add the auth config to the list.
+
+Create a jwt callback for every token generated. create another callback to extract session & token to get the user infor & id.
+
+Add a role field to the User model (admin & user). Reset the migrate database to start anew. (Perform on in development.)
+
+
 
 ## Learn More
 
