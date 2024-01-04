@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useTransition } from "react";
+import { useEffect, useState, useTransition } from "react";
 import { useForm } from "react-hook-form";
 import { CardWrapper } from "./card-wrapper";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -24,6 +24,7 @@ export const RegisterForm = () => {
 	const [error, setError] = useState<string | undefined>("");
 	const [success, setSuccess] = useState<string | undefined>("");
 	const [isPending, startTransition] = useTransition();
+
 	const form = useForm<z.infer<typeof RegisterSchema>>({
 		resolver: zodResolver(RegisterSchema),
 		defaultValues: {
@@ -32,6 +33,11 @@ export const RegisterForm = () => {
 			name: "",
 		},
 	});
+
+	useEffect(() => {
+		form.reset();
+	}, [form.formState.submitCount]);
+
 	const onSubmit = (values: z.infer<typeof RegisterSchema>) => {
 		setError("");
 		setSuccess("");
@@ -43,6 +49,7 @@ export const RegisterForm = () => {
 			});
 		});
 	};
+
 	return (
 		<CardWrapper
 			headerTitle="Register"
@@ -100,8 +107,8 @@ export const RegisterForm = () => {
 										<Input
 											{...field}
 											disabled={isPending}
-											type="password"
 											placeholder="******"
+											type="password"
 										/>
 									</FormControl>
 									<FormMessage />
