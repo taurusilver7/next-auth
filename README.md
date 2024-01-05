@@ -139,7 +139,11 @@ By tweaking the auth call function around, set the session.user.role as assigned
 
 -  OAuth for Socials (Github & Google)
 
+Get the client Id & client_secret strings from corresponding social services. Instead of creating another server action, create an event to trigger the signIn auth function for Google & Github providers.
 
+- Events
+
+Follow the [guide](https://next-auth.js.org/configuration/events) to 
 
 ## Learn More
 
