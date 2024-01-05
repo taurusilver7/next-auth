@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 const Settings = async () => {
 	const session = await auth();
 	return (
-		<div className="flex flex-col h-full gap-4 justify-center items-center text-2xl">
+		<div className="flex flex-col max-w-2xl h-full gap-4 justify-center items-center text-2xl">
 			{JSON.stringify(session?.user)}
 
 			<form
