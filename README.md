@@ -141,9 +141,17 @@ By tweaking the auth call function around, set the session.user.role as assigned
 
 Get the client Id & client_secret strings from corresponding social services. Instead of creating another server action, create an event to trigger the signIn auth function for Google & Github providers.
 
-- Events
+-  Events
 
-Follow the [guide](https://next-auth.js.org/configuration/events) to 
+Follow the [guide](https://next-auth.js.org/configuration/events) to create events to handle the email conflicts.
+
+In NextAuth, `Events` are async functions that don't return a response, but are used during log audit, reporting or handling side effects.
+
+The event `linkAccount` was triggered when a user tries oAuth provider to signin to his already registered account. It is triggered when an existing user tries to link their social account.
+
+In such cases, update the already registered account with the emailVerification data, since the social accounts already have performed two-factor authentication & email verification.
+
+Add custom pages routes to the auth, when an email conflict due to logging-in with multiple social accounts with same email address arises. Add specific routes to resolve the issue.
 
 ## Learn More
 
