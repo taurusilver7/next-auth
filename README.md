@@ -151,7 +151,13 @@ The event `linkAccount` was triggered when a user tries oAuth provider to signin
 
 In such cases, update the already registered account with the emailVerification data, since the social accounts already have performed two-factor authentication & email verification.
 
-Add custom pages routes to the auth, when an email conflict due to logging-in with multiple social accounts with same email address arises. Add specific routes to resolve the issue.
+Another issue with social login is the account linking. An email linked to a social provider will raise an issue when trying to login with a different social provider. It generates an OAuthAccountLinking error.
+
+Add custom pages routes to the auth, when an email conflict due to logging-in with multiple social accounts arises. Add specific routes & error components to resolve the issue.
+
+-  Credential Verification
+
+Create a schema model to verify the account credentials entered during registration.
 
 ## Learn More
 
