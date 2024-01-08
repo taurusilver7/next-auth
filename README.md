@@ -159,6 +159,12 @@ Add custom pages routes to the auth, when an email conflict due to logging-in wi
 
 Create a schema model to verify the account credentials entered during registration.
 
+Create utility functions to generate tokens based on token (update/recreate) and email. Create lib functions to generateVerficationTokens.
+
+Add the verification sequence into the login & register actions. The login updates the already generated token while the register create (later sends) new verification tokens.
+
+Perform the same action in auth, since next-auth creates custom pages for errors unaddressed and redirects them without supervision. For full security, and seamless UX, restrict the verification sequence in auth.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
