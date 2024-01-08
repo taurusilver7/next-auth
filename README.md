@@ -2,7 +2,7 @@
 
 > A Custom Authentication Service, built by Next-Auth, Typescript, TailwindCSS, Prisma & Neon Postgresql Database.
 
-![Next-Auth](https://i.ytimg.com/vi/w2h54xz6Ndw/maxresdefault.jpg)
+![Next-Auth](https://i.ibb.co/M2fsvMq/next-auth.jpg)
 
 ## Key Features
 
