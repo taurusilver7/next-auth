@@ -165,6 +165,8 @@ Add the verification sequence into the login & register actions. The login updat
 
 Perform the same action in auth, since next-auth creates custom pages for errors unaddressed and redirects them without supervision. For full security, and seamless UX, restrict the verification sequence in auth.
 
+Create the resend email verification sequence.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
