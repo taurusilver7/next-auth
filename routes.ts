@@ -2,7 +2,7 @@
  @type {String[]}
  */
 
-export const publicRoutes = ["/"];
+export const publicRoutes = ["/", "/auth/new-verification"];
 
 /*An array of private routes accessed only by authorized users. Required Authentication
  @type {string[]}
