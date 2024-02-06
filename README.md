@@ -165,7 +165,9 @@ Add the verification sequence into the login & register actions. The login updat
 
 Perform the same action in auth, since next-auth creates custom pages for errors unaddressed and redirects them without supervision. For full security, and seamless UX, restrict the verification sequence in auth.
 
-Create the resend email verification sequence.
+Create the resend email verification sequence in [resend](https://resend.com/overview) an email service platform. Get the API key.
+
+Create a confirm link and a new route `auth/new-verification` to check on the token sent for verification. Check if it has expired, gone through evenly, or for any other unknown errors. Update the user's email verification status in the database to the verified date.
 
 ## Learn More
 
