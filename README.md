@@ -169,7 +169,9 @@ Create the resend email verification sequence in [resend](https://resend.com/ove
 
 Create a confirm link and a new route `auth/new-verification` to check on the token sent for verification. Check if it has expired, gone through evenly, or for any other unknown errors. Update the user's email verification status in the database to the verified date.
 
-Send the verification email from register & login server actions. Create a new-verification auth route and verification form.
+Send the verification email from register & login server actions. Create a new-verification auth route and verification form to verify the link sent to email.
+
+Create a new-verification action to check whether the token has expired and/or valid.
 
 ## Learn More
 
