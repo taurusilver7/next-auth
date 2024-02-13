@@ -171,7 +171,7 @@ Create a confirm link and a new route `auth/new-verification` to check on the to
 
 Send the verification email from register & login server actions. Create a new-verification auth route and verification form to verify the link sent to email.
 
-Create a new-verification action to check whether the token has expired and/or valid.
+Create a new-verification action to check whether the token has expired and/or valid. Create an expiry date for the verification token.
 
 ## Learn More
 
